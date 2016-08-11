@@ -21,24 +21,24 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
 </head>
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')) . ' ' . $active->alias . ' ' . $pageclass; ?>">
     <!-- Fixed navbar -->
-    <span itemscope itemtype="http://schema.org/LocalBusiness">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./"><img src="<?php echo $tpath; ?>/images/logo2.png"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse navbar-right">
-                    <jdoc:include type="modules" name="navbaram" />
-
-                </div><!--/.nav-collapse -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./"><img src="<?php echo $tpath; ?>/images/logo2.png"></a>
             </div>
-        </nav>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+                <jdoc:include type="modules" name="navbaram" />
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <span itemscope itemtype="http://schema.org/LocalBusiness">
         <div class="container-fluid" id="content">
             <jdoc:include type="component" />
         </div>
