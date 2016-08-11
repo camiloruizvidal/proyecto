@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="2.5" type="template" client="site" method="upgrade">
+	
+	<name>Animas Studio</name><!-- name the template -->
+	<creationDate>2016-08-08</creationDate><!-- the date your are beginn to code -->
+	<author>ANIMASSTUDIO</author><!-- your name (oops, I repeat myself) -->
+	<copyright>Copyright © animasstudio.com</copyright><!-- for who you are coding -->
+	<authorEmail>info@animasstudio.com</authorEmail><!-- your email address -->
+	<authorUrl>http://www.animasstudio.com</authorUrl><!-- your url -->
+	<version>1.0.0</version><!-- give your template a number -->
+	<description>
+		<h1>ANIMASSTUDIO</h1>
+		<p>Created by <a href="http://www.solucionescrv.com" target="_blank">CRV Soluciones Software | solucionescrv.com</a>.</p>
+	</description>
+	<positions>
+		<position>navbaram</position>
+		<position>containeram</position>
+		<position>containerfooteram</position>
+		<position>footeram</position>
+		<position>contactosam</position>
+	</positions>
+	<files><!-- no need to change -->
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions><!-- define the positions for modules here -->
+		<position>debug</position>
+	</positions>
+	
+</extension>
