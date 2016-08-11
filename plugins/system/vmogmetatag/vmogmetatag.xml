@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - VM OG Meta Tag</name>
+	<creationDate>August 2015</creationDate>
+	<author>Abhishek Das</author>
+	<copyright>Copyright (C) 2012-2015 VirtuePlanet Services LLP. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>info@virtueplanet.com</authorEmail>
+	<authorUrl>www.virtueplanet.com</authorUrl>
+	<version>3.0</version>
+	<description><![CDATA[ 
+		<link href="../plugins/system/vmogmetatag/assets/admin_css.css" rel="stylesheet" type="text/css" media="all"/>
+		<h1 class="template-titile">VM OG Meta Tag - System Plugin</h1>
+		<p class="desc-text">
+			VM OG Meta Tag Plugin enables you to integrate your Joomla and VirtueMart website into the Open Graph Protocol. The Open Graph Protocol enables you to integrate your Web pages into the social graph. It is currently designed for Web pages representing profiles of real-world things — things like movies, sports teams, celebrities, and restaurants. Including Open Graph tags on your Web page, makes your page equivalent to a Facebook Page. This means when a user clicks a Like button on your page, a connection is made between your page and the user. Your page will appear in the "Likes and Interests" section of the user's profile, and you have the ability to publish updates to the user. Your page will show up in the same places that Facebook pages show up around the site (e.g. search), and you can target ads to people who like your content. The structured data you provide via the Open Graph Protocol defines how your page will be represented on Facebook.
+		</p>
+		<p class="desc-text">
+			To know more about Open Graph visit <a href="http://developers.facebook.com/docs/opengraphprotocol/" target="_blank" title="Facebook Open Graph Protocol Developers page">Facebook Open Graph Protocol Developers page</a> or <a href="http://ogp.me/" target="_blank" title="ogp.me">Open Graph Official website</a>. You may also use the <a href="http://developers.facebook.com/tools/lint/" title="Facebook URL Linter" target="_blank">Facebook URL Linter</a> to test the validity of the data.
+		</p>
+		<p class="copy-text">
+			Copyright © 2012-2015 <a href="http://www.virtueplanet.com" target="_blank" title="VirtuePlanet">VirtuePlanet</a> Services LLP. All rights reserved.
+		</p>
+	]]>
+	</description>
+	<files>
+		<filename plugin="vmogmetatag">vmogmetatag.php</filename>
+		<filename>vmincludes.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>fields</folder>
+	</files>
+
+	<config>
+
+		<fields
+			name="params">
+			
+			<fieldset
+				name="basic"
+				addfieldpath="plugins/system/vmogmetatag/fields">
+
+				<field
+					name="add_og_prefix"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					filter="integer"
+					label="Add OG Head Prefix"
+					description="Add Open Graph prefix attribute to head element required by Facebook using JavaScript.">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="excludes"
+					type="componentlist"
+					default=""
+					multiple="true"
+					label="Exclude Views"
+					description="Select the view where you do not want to add the OG Meta Tags."/>
+				
+				<field
+					name="default_spacer"
+					type="spacer"
+					label="Default Data"
+					description="These data will be used as global meta data for your site."/>
+
+				<field
+					name="fb:app_id"
+					type="text"
+					default=""
+					filter="integer"
+					label="Facebook App ID"
+					description="Your app's unique identifier."/>
+			
+				<field
+					name="og:type"
+					type="list"
+					default="website"
+					label="Type"
+					description="Open Graph metadata Type">
+					<option value="article">article</option>
+					<option value="blog">blog</option>
+					<option value="business.business">business</option>
+					<option value="website">website</option>
+					<option value="activity">activity</option>
+					<option value="sport">sport</option>
+					<option value="bar">bar</option>
+					<option value="company">company</option>
+					<option value="cafe">cafe</option>
+					<option value="hotel">hotel</option>
+					<option value="restaurant">restaurant</option>
+					<option value="cause">cause</option>
+					<option value="sports_league">sports_league</option>
+					<option value="sports_team">sports_team</option>
+					<option value="band">band</option>
+					<option value="government">government</option>
+					<option value="non_profit">non_profit</option>
+					<option value="school">school</option>
+					<option value="university">university</option>
+					<option value="actor">actor</option>
+					<option value="athlete">athlete</option>
+					<option value="author">author</option>
+					<option value="director">director</option>
+					<option value="musician">musician</option>
+					<option value="politician">politician</option>
+					<option value="profile">profile</option>
+					<option value="public_figure">public_figure</option>
+					<option value="city">city</option>
+					<option value="country">country</option>
+					<option value="landmark">landmark</option>
+					<option value="state_province">state_province</option>
+					<option value="album">album</option>
+					<option value="book">book</option>
+					<option value="drink">drink</option>
+					<option value="food">food</option>
+					<option value="game">game</option>
+					<option value="movie">movie</option>
+					<option value="product">product</option>
+					<option value="song">song</option>
+					<option value="tv_show">tv_show</option>
+				</field>
+
+				<field
+					name="og:site_name"
+					type="text"
+					default=""
+					label="Site Name"
+					description="The name of your website (such as IMDb, not imdb.com)."/>
+	
+				<field
+					name="og:image"
+					type="media"
+					default=""
+					label="Site Logo"
+					description="Select an thumbnail image from the main images folder."/>
+					
+				<field
+					name="contact_spacer"
+					type="spacer"
+					label="Contact Data"
+					description="These data will be used as global contact meta data for your site."/>
+					
+				<field
+					name="business:contact_data:street_address"
+					type="text"
+					default=""
+					label="Street Address"
+					description="The number and street of the postal address for this business."/>
+					
+				<field
+					name="business:contact_data:locality"
+					type="text"
+					default=""
+					label="Locality"
+					description="The city (or locality) line of the postal address for this business."/>
+
+				<field
+					name="business:contact_data:region"
+					type="text"
+					default=""
+					label="Region"
+					description="The state (or region) line of the postal address for this business."/>
+
+				<field
+					name="business:contact_data:postal_code"
+					type="text"
+					default=""
+					label="Postal Code"
+					description="The postcode (or ZIP code) of the postal address for this business."/>
+
+				<field
+					name="business:contact_data:country_name"
+					type="text"
+					default=""
+					label="Country Name"
+					description="The country of the postal address for this business."/>
+
+				<field
+					name="business:contact_data:email"
+					type="email"
+					default=""
+					label="Email"
+					description="An email address to contact this business."/>
+
+				<field
+					name="business:contact_data:phone_number"
+					type="text"
+					default=""
+					label="Phone Number"
+					description="A telephone number to contact this business."/>
+					
+				<field
+					name="business:contact_data:fax_number"
+					type="text"
+					default=""
+					label="Fax Number"
+					description="A fax number to contact this business."/>
+					
+				<field
+					name="business:contact_data:website"
+					type="text"
+					default=""
+					label="Website"
+					description="A website URL for this business."/>
+			
+				<field
+					name="place:location:latitude"
+					type="text"
+					default=""
+					label="Latitude"
+					description="The location latitude."/>
+					
+				<field
+					name="place:location:longitude"
+					type="text"
+					default=""
+					label="Longitude"
+					description="The location longitude"/>
+			
+			</fieldset>
+					
+			<fieldset
+				name="advanced">
+				
+				<field
+					name="fb:admins"
+					type="text"
+					default=""
+					label="Facebook Admins (optional)"
+					description="Enter your Facebook Profile number here (the nine digit id number displayed in the URL of your Facebook's profile page). Note: This is only required for the Facebook URL linter to work, it is not required for anything other than admin testing."/>
+					
+			</fieldset>
+			
+		</fields>
+		
+	</config>
+</extension>

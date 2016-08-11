@@ -15,15 +15,6 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
 
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta name ="apple-mobile-web-app-capable" content="IE=edge, chrome=1" /><!--nos dice que es compatible con el navegador safari-->
-    <meta name="description" content="CRV|SOLUCIONES SOFTWARE es una empresa desarrolladora de software, aplicativos moviles y desarrollo de contenidos digitales." />
-    <meta name="author" content="CRV| SOLUCIONES SOFTWARE" />
-    <meta name="description" content="Home page" />
-    <meta name="keywords" content="marketing digital, desarrollo software, contenidos digitales, aplicativos moviles, optimizacion del negocio,calidad,responsabilidad y valor" />		
-    <meta property="og:title" content="Experiencias elaborado contenidos digitales"> <!-- creo que debe ir Experiencias elaborado contenidos digitales el titulo de la pagina -->
-    <meta property="og:description" content="CRV|SOLUCIONES SOFTWARE es una empresa desarrolladora de software, aplicativos moviles y desarrollo de contenidos digitales.">
-    <meta property="og:image" content="http://www.solucionescrv.com/img/ui/Logo-cuadrado.png"> <!--debemos colocar la imagen de CRV el logo, no se si lo hice bien.-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="index.html">
 
 
 

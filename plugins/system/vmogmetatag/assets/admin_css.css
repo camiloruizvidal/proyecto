@@ -1,0 +1,108 @@
+/**
+ *---------------------------------------------------------------------------------------
+ * @package       VM OG Meta Tag - System Plugin
+ *---------------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2012-2015 VirtuePlanet Services LLP. All rights reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       Abhishek Das
+ * @email         info@virtueplanet.com
+ * @link          http://www.virtueplanet.com
+ *---------------------------------------------------------------------------------------
+ */
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+fieldset.panelform ul li > label {
+	width:170px;
+	max-width:170px;
+	padding-right:20px;
+	display:inline-block;
+	margin-top:12px;	
+	padding-bottom:20px;
+	text-align:right;
+}
+fieldset.panelform fieldset.radio label {
+	min-width:40px;	
+	width:60px;
+	margin-top:12px;
+}
+fieldset.panelform input[type="radio"]{
+	margin-top:12px;
+}
+fieldset.panelform .spacer label {
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:10px 0 0 0;
+	width:100%;
+	max-width:100%;
+	font-size:120%;
+}
+fieldset.panelform ul li > fieldset, fieldset.panelform ul li > input {
+	margin-bottom:30px;
+}
+fieldset.panelform .button2-left, fieldset.panelform .media-preview {
+	margin-top:8px;
+}
+.spacer hr {
+	border:0 none;
+	background:#00a8df;
+	height:2px;
+}
+fieldset.panelform input[type="text"],
+fieldset.panelform input[type="email"] {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s,box-shadow linear 0.2s;
+	transition: border linear 0.2s,box-shadow linear 0.2s;
+}
+fieldset.panelform select,
+fieldset.panelform input[type="text"],
+fieldset.panelform input[type="email"] {
+	display: inline-block;
+	padding: 4px;
+	line-height: 20px;
+	font-size:12px;
+	color: #333333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:auto;
+}
+fieldset.panelform input[type="text"]:focus,
+fieldset.panelform input[type="email"]:focus {
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.desc-text {
+	font-weight:normal;
+	color:#656667;
+	margin-left:10px;
+}
+.template-titile {
+	color:#333;
+	margin-left:10px;
+}
+.copy-text {
+	font-size:0.9em;
+	font-style:italic;
+	font-weight:normal;
+	margin-left:10px;
+}
+.spacer label {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
